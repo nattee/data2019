@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
+
 
 int main() {
   std::pair<string,int> p1("hahaha",3999);
@@ -12,8 +12,12 @@ int main() {
 
   p1 = { "asdf", 111};
 
-  cout << p1.first << " : " << p1.second << endl;
-  cout << p2.first << " : " << p2.second << endl;
+  std::cout << p1.first << " : " << p1.second << std::endl;
+  std::cout << p2.first << " : " << p2.second << std::endl;
+
+  p1.first = "nattee";
+  cout << "after assigning nattee to first of p1" << endl;
+  std::cout << p1.first << " : " << p1.second << std::endl;
 
 }
 
