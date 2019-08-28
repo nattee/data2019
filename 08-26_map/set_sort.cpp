@@ -16,16 +16,16 @@ int main() {
   v.push_back(4);
   v.push_back(8);
 
-  //sort element of s
-  //  we can easily use sort(s.begin(), s.end())
+  //sort element of v
+  //  we can easily use sort(v.begin(), v.end())
   //  but please do not use that
   //  Instead, you must use a set<int> to sort the data
-  //  by putting all data in s into a set and iterate
+  //  by putting all data in v into a set and iterate
   //  every member in the set and put them back into the vector
 
 
   // display everything in the vector
-  for (auto it = s.begin();it != s.end();it++) {
+  for (auto it = v.begin();it != v.end();it++) {
     cout << *it << endl;
   }
 }

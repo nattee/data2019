@@ -26,5 +26,7 @@ int main() {
   //this is wrong.... but compilable
   it = x.end();
   cout << "This should not be right" << endl << *it << endl;
+
+  cout << x.at(100) << endl;
 }
 

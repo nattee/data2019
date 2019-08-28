@@ -16,6 +16,9 @@ int main() {
   for (auto it = m.begin(); it != m.end();it++) {
     cout << (*it).first << ": " << (*it).second << endl;
   }
+  for (auto it = m.begin(); it != m.end();it++) {
+    cout << it->first << ": " << it->second << endl;
+  }
   return 0;
   // erase aa, b, c
   //

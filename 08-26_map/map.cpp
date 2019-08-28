@@ -24,15 +24,28 @@ int main() {
     cout << "The key is " << (*it).first << " the value is " << (*it).second << endl;
   }
 
-  return 0;
-  // find
-  string key = "asdf";
-  map<string,string>::iterator it2 = m.find(key);
-  if (it2 == m.end()) {
-    cout << "There is no box where the key is " << key << endl;
-  } else {
-    cout << "I have a box with key" << key  << " and value = " << (*it2).second << endl;
+//  // find
+//  string key = "asdf";
+//  map<string,string>::iterator it2 = m.find(key);
+//  if (it2 == m.end()) {
+//    cout << "There is no box where the key is " << key << endl;
+//  } else {
+//    cout << "I have a box with key" << key  << " and value = " << (*it2).second << endl;
+//
+//  }
+  size_t result = m.erase("abc");
+  cout << "erase return value is " << result << endl;
+
+  result = m.erase("9999999");
+  cout << "erase return value is " << result << endl;
+
+  cout << "after delete " << endl;
+  for (auto &a : m) {
+    cout << "The key is " << a.first << " the value is " << a.second << endl;
+
 
   }
+
+
 }
 

@@ -12,11 +12,18 @@ int main() {
   }
 
   //sort function, taking iterator of the position to be sorted
-  sort(x.begin(),x.end());
+  sort(x.begin()+1,x.end()-3);
 
   cout << "After sort" << endl;
   for (auto a : x) {
     cout << a << endl;
   }
+
+//  for (auto &a : x) { a = 10;}
+//
+//  cout << "After setting value to 10" << endl;
+//  for (auto a : x) {
+//    cout << a << endl;
+//  }
 }
 
